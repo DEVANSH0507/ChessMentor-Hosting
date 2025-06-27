@@ -1,0 +1,12 @@
+/* write your css here */
+
+/* //x me stop y me scroll  aa gya */
+html,body{
+    overflow-x:hidden ;
+}
+
+.homepage_bg{
+    background-image: url("./assets/Images/bghome.svg");
+}
+
+
