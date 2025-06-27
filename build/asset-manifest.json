@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ddf668e6.css",
+    "main.js": "/static/js/main.6b27c9f2.js",
+    "static/media/banner.mp4": "/static/media/banner.ff5cd9801e9ff0e5c07e.mp4",
+    "static/media/TimelineImage.png": "/static/media/TimelineImage.b98b022921fada842ef9.png",
+    "static/media/Compare_with_others.png": "/static/media/Compare_with_others.056173ef50684a6c6afb.png",
+    "static/media/bghome.svg": "/static/media/bghome.de04eae287ff1d29f0b1.svg",
+    "static/media/Plan_your_lessons.png": "/static/media/Plan_your_lessons.0848277c6ae4d27c3f30.png",
+    "static/media/rzp.png": "/static/media/rzp.db1cd7db1b52c2ed8e3d.png",
+    "static/media/Instructor.jpeg": "/static/media/Instructor.4303a9298eeabcdb3e2d.jpeg",
+    "static/media/Know_your_progress.png": "/static/media/Know_your_progress.cf3ea1c51544985430d3.png",
+    "static/media/FoundingStory.jpg": "/static/media/FoundingStory.fbf36efe617c5dc8a01f.jpg",
+    "static/media/aboutus3.jpeg": "/static/media/aboutus3.f0248050e257bfa90c0d.jpeg",
+    "static/media/frame.png": "/static/media/frame.3a238e5f26d676376e1d.png",
+    "static/media/aboutus2.jpeg": "/static/media/aboutus2.b895064515728e59fa10.jpeg",
+    "static/media/signup.webp": "/static/media/signup.acaf50bcb11d9aec44b4.webp",
+    "static/media/login.webp": "/static/media/login.5eeb0b81544a40330d4b.webp",
+    "static/media/aboutus1.jpeg": "/static/media/aboutus1.2e6c5c6ee64b1fa264a5.jpeg",
+    "index.html": "/index.html",
+    "static/media/Logo2.svg": "/static/media/Logo2.2d9e85de9e756cda89ffc4582338c939.svg",
+    "static/media/Logo1.svg": "/static/media/Logo1.73daf51e41d665299fc682bc3cb53878.svg",
+    "static/media/Logo3.svg": "/static/media/Logo3.0a56f78fead602f0d54c55ddcdf7e616.svg",
+    "static/media/Logo4.svg": "/static/media/Logo4.5da4c6e0c53e6745b25529891ef82458.svg",
+    "main.ddf668e6.css.map": "/static/css/main.ddf668e6.css.map",
+    "main.6b27c9f2.js.map": "/static/js/main.6b27c9f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddf668e6.css",
+    "static/js/main.6b27c9f2.js"
+  ]
+}
