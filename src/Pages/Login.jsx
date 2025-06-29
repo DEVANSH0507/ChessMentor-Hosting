@@ -8,14 +8,16 @@ import { TbCornerDownRightDouble } from "react-icons/tb"
 import { BsLightningChargeFill } from "react-icons/bs"
 
 function Login() {
-  // const [showDemo, setShowDemo] = useState(true)
+  const [showDemo, setShowDemo] = useState(true)
   const dispatch = useDispatch()
   const navigate = useNavigate()
   return (
     <>
     {/* test login ID */}
-    {/* <div  className={`${showDemo ? "":"hidden"} justify-center items-center absolute bg-richblack-400 top-52 md:top-32 md:right-[50%] right-[10%] p-6 -rotate-[20deg] z-20 `}>
-      <div className="flex flex-col gap-2 relative">
+    <div
+  className={`${showDemo ? "" : "hidden"} justify-center items-center absolute bg-richblack-400 top-52 md:top-32 right-[10%] p-6 z-20`}
+>
+      <div className="flex flex-row gap-2 relative">
         <div onClick={()=>{setShowDemo(false)}} className="absolute top-[-30px] right-[-20px] text-5xl text-richblack-900 rounded-full w-[40px] h-[40px] flex justify-center items-center cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="20" height="20">
   <circle cx="50" cy="50" r="45" fill="#888888" stroke="#000000" stroke-width="2" />
@@ -23,12 +25,12 @@ function Login() {
 </svg>
 
         </div>
-        <div className=" gap-y-2 flex flex-col">
-        <p className="text-2xl font-extrabold text-richblack-5 flex items-center">Take a Demo &nbsp; <BsLightningChargeFill size={20}/></p>
+        <div className=" gap-y- flex flex-col">
+        <p className="text-2xl font-extrabold text-richblack-5 flex items-center">Try Test Id's &nbsp; <BsLightningChargeFill size={20}/></p>
         <div>
         <button onClick={
           () => {
-            dispatch(login("kumarhimanshusangwan@gmail.com", "12345", navigate)
+            dispatch(login("Test_Instructor@gmail.com", "qwerty", navigate)
           )}
         } className="bg-yellow-100 font-semibold mt-4 mb-1 text-richblack-900 px-4 py-2 rounded-md flex">
           <TbCornerDownRightDouble className="text-2xl text-richblack-900 hidden md:block"/>
@@ -37,7 +39,7 @@ function Login() {
       <div>
         <button onClick={
           () => {
-            dispatch(login("1234@gmail.com", "12345", navigate)
+            dispatch(login("Test_Student@gmail.com", "qwerty", navigate)
           )}
         } className="bg-yellow-100 font-semibold text-richblack-900 px-4 py-2 rounded-md flex">
           <TbCornerDownRightDouble className="text-2xl text-richblack-900 md:block hidden"/>
@@ -45,14 +47,16 @@ function Login() {
         </div>
         </div>
       </div>
-    </div> */}
-    <Template
+    </div> 
+    <div className=" flex place-content-center">
+      <Template
       title="Welcome Back"
-      description1="Build skills for today, tomorrow, and beyond."
-      description2="Education to future-proof your career."
-      image={loginImg}
+      description1="Small Steps  leads to Greater Success."
+      description2="Lets Dive in."
+      //image={loginImg}
       formType="login"
     />
+    </div>
     </>
   )
 }

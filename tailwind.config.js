@@ -1,7 +1,30 @@
-/** @type {import('tailwindcss').Config} */
+// @type {import('tailwindcss').Config} 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    extend: {
+      animation: {
+        pingOnce: 'pingOnce 2s ease-out 1',
+        glow: 'glow 1.5s ease-in-out infinite alternate',
+        flicker: 'flicker 3s infinite',
+      },
+      keyframes: {
+        pingOnce: {
+          '0%': { transform: 'scale(1)', opacity: 1 },
+          '50%': { transform: 'scale(1.25)', opacity: 0.6 },
+          '100%': { transform: 'scale(1)', opacity: 1 },
+        },
+        glow: {
+          '0%': { filter: 'drop-shadow(0 0 0px white)' },
+          '100%': { filter: 'drop-shadow(0 0 6px white)' },
+        },
+        flicker: {
+          '0%, 19.999%, 22%, 62.999%, 64%, 100%': { opacity: 1 },
+          '20%, 21.999%, 63%, 63.999%': { opacity: 0.4 },
+        },
+      },
+    },
+    
     fontFamily: {
       inter: ["Inter", "sans-serif"],
       "edu-sa": ["Edu SA Beginner", "cursive"],
@@ -133,3 +156,4 @@ module.exports = {
   },
   plugins: [],
 };
+

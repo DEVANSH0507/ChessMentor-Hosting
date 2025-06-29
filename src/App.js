@@ -35,6 +35,7 @@ import Footer from './Components/common/Footer';
 import ViewCourse from "./Pages/ViewCourse";
 import VideoDetails from "./Components/core/ViewCourse/VideoDetails";
 import CourseDetails from "./Pages/CourseDetails";
+import ChessTutor from "./Pages/ChessTutor";
 
 
 
@@ -173,6 +174,10 @@ function App() {
         </Route>
 
          <Route path="*" element={<Home />} />
+
+         {/* chess tutor path */}
+         <Route path="/tutor" element={<ChessTutor />} /> 
+
 
       </Routes>
        <Footer />

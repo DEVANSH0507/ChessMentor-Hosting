@@ -16,10 +16,13 @@ import CourseSlider from '../Components/core/Catalog/CourseSlider';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import RatingSlider from '../Components/core/Ratings/RatingSlider';
+import AiCoachPopup from '../Components/core/HomePage/AiCoachPopUp';
 
 
 
 const Home = () => {
+
+    const [showCoach, setShowCoach] = useState(false);
     const [CatalogPageData, setCatalogPageData] = useState(null);
     const categoryID = "685ea8bca2bc87baf48b151a"; //Basic category id
 
@@ -40,17 +43,20 @@ const Home = () => {
     <div>
       
       {/*Section1>*/}
+      <AiCoachPopup/>
       
       <div>
-          <div className=' mx-auto relative flex flex-col w-11/12 items-center justify-between text-white '>
+    <div className=' mx-auto relative flex flex-col w-11/12 items-center justify-between text-white '>
            
             <Link to={"/signup"}>
                        <div className=' group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold transition-all duration-200 hover: scale-95 w-fit max-w-maxContent'>
                            <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900'>
                          <p>Become an Instructor</p><FaArrowRight/>
-                           </div>
+                        </div>
                        </div>
              </Link>
+
+               
 
               <div className='text-center text-3xl md:text-4xl font-semibold mt-7'>
                 Empower Your Future With <HighlightText text={"Awesome Chess Skills"}/>
@@ -251,9 +257,14 @@ codeblock={`1. Magnus Carlsen
 {/* {FOOTER} */}
 {/* <Footer/> */}
 
+  {showCoach && <AiCoachPopup onClose={() => setShowCoach(false)} />}
 
     </div>
   )
+
 }
+
+
+
 
 export default Home

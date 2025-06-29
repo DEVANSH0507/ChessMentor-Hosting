@@ -74,3 +74,8 @@ export const settingsEndpoints = {
   CHANGE_PASSWORD_API: BASE_URL + "/auth/changePassword",
   DELETE_PROFILE_API: BASE_URL + "/profile/deleteProfile",
 };
+
+//AI ENDPOINTS
+export const aiEndpoints = {
+  EXPLAIN_MOVE_API: BASE_URL + "/ai-tutor/explain",
+};

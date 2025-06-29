@@ -54,9 +54,9 @@ export async function buyCourse (token, courses, userDetails, navigate, dispatch
         currency: orderResponse.data.currency,
         amount: orderResponse.data.amount.toString(),
         order_id: orderResponse.data.orderId,
-        name: "Study Notion",
+        name: "Chess Mentor",
         description: "Thank you for purchasing the course",
-        image: rzplogo,
+        //image: rzplogo,
         prefill: {
             name: userDetails?.firstName + " " + userDetails?.lastName,
             email: userDetails?.email,

@@ -1,7 +1,7 @@
 {
     "name": "Study Notion",
     "id": "/",
-    "short_name": "Study Notion",
+    "short_name": "Study Notio",
     "description": "An Ed Tech Web App for Students and Instructors",
     "start_url": "/",
     "display": "standalone",
